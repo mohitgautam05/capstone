@@ -9,9 +9,7 @@ page = str(BeautifulSoup(response.content))
 
 
 def getURL(page):
-    """
-
-    :param page: html of web page (here: Python home page) 
+    """:param page: html of web page (here: Python home page) 
     :return: urls in that page 
     """
     start_link = page.find("a href")
